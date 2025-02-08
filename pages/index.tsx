@@ -1,6 +1,7 @@
-import { ArrowRightIcon, PinBottomIcon, StarFilledIcon, VideoIcon } from '@radix-ui/react-icons'
+import { ArrowRightIcon, PinBottomIcon, StarFilledIcon } from '@radix-ui/react-icons'
 import localFont from 'next/font/local'
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 
 import Footer from '@/components/layout/footer'
@@ -29,12 +30,9 @@ export default function Home() {
           <div className="bg-primary">
             <div className="container mx-auto w-full px-4">
               <div className="grid grid-cols-3 justify-between gap-6 py-12">
-                <img
-                  src="https://static.wixstatic.com/media/e1f53b_f62d5ab8332e48339b9fc57121c7d795~mv2.png/v1/fill/w_381,h_381,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1f53b_f62d5ab8332e48339b9fc57121c7d795~mv2.png"
-                  className="mx-auto w-full max-w-72"
-                />
+                <Image src="/r-snoo.png" width={288} height={288} alt="Reddit Snoofi" className="mx-auto w-full max-w-72" />
                 <div className="flex flex-col items-center gap-6 text-center">
-                  <img src="https://static.wixstatic.com/media/e1f53b_a941ce1361a44129bd6fc2ff068e58b1~mv2.webp/v1/fill/w_134,h_134,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1f53b_a941ce1361a44129bd6fc2ff068e58b1~mv2.webp" />
+                  <Image src="/snoo.png" width={134} height={134} alt="Snoofi" />
                   <h1 className="text-6xl font-bold">r/snoofi</h1>
                   <div>stumbled my way from the blockchain to reddit.</div>
                   <div>Contract Address (CA): 7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t</div>
@@ -46,25 +44,13 @@ export default function Home() {
                     </Button>
                   </div>
                 </div>
-                <img
-                  src="https://static.wixstatic.com/media/e1f53b_a941ce1361a44129bd6fc2ff068e58b1~mv2.webp/v1/fill/w_399,h_399,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1f53b_a941ce1361a44129bd6fc2ff068e58b1~mv2.webp"
-                  className="mx-auto w-full max-w-72 -rotate-45"
-                />
+                <Image src="/snoo.png" width={288} height={288} alt="Snoofi" className="mx-auto w-full max-w-72 -rotate-45" />
               </div>
             </div>
             <div id="howToBuy" className="container mx-auto w-full px-4">
               <div className="grid grid-cols-1 gap-4 py-12">
                 <div className="flex flex-col items-center gap-6">
                   <h3 className="text-6xl font-bold">How to Buy</h3>
-                  {/*
-                  <div>
-                    <Button variant="outline" className="rounded-full text-lg font-semibold" asChild>
-                      <Link href="https://youtu.be/Go-rf0utrrg?si=rs4vZIG8BQCyEJN1" className="flex items-center gap-2" target="_blank">
-                        <VideoIcon /> Watch on Youtube
-                      </Link>
-                    </Button>
-                  </div>
-                  */}
                   <div>r/snoofi is available on decentralized and centralized exchanges.</div>
                   <div className="grid grid-cols-3 gap-8">
                     <Card>
@@ -87,7 +73,7 @@ export default function Home() {
                         </CardTitle>
                       </CardHeader>
                       <CardContent className="flex flex-col gap-4">
-                        <strong>Don't have $SOL?</strong>
+                        <strong>Don&#39;t have $SOL?</strong>
                         <p>Buy $SOL on a centralized exchange such as Crypto.com, Coinbase, Binance, etc.</p>
                         <p>
                           Next, download Phantom Wallet on your desktop. Send the $SOL to your Phantom Wallet, then
@@ -105,7 +91,7 @@ export default function Home() {
                         <strong>Buy with Credit Card</strong>
                         <p>
                           Download the Moonshot app on your mobile device. Sign up for an account, then search r/snoofi.
-                          Click on the r/snoofi token, then click "Buy".
+                          Click on the r/snoofi token, then click &#34;Buy&#34;.
                         </p>
                         <p>Credit, Debit, Apple Pay, Paypal</p>
                       </CardContent>
@@ -120,11 +106,7 @@ export default function Home() {
                   <h3 className="inline-flex items-center gap-4 text-6xl font-bold text-white">
                     <span>Get</span>
                     <Link href="https://moonshot.money" target="_blank">
-                      <img
-                        className="h-12"
-                        src="https://static.wixstatic.com/media/e1f53b_d8997a5fd7d84ed88b04efce4de55fc0~mv2.png/v1/fill/w_288,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/moonshot_light.png"
-                        alt="Moonshot"
-                      />
+                      <Image src="/exchanges/moonshot_light.png" width={288} height={48} alt="Moonshot" />
                     </Link>
                     <span>& earn up to $100</span>
                   </h3>
@@ -141,11 +123,11 @@ export default function Home() {
                   </div>
                   <div className="flex flex-wrap items-center justify-center gap-16">
                     <Link href="https://www.mexc.com/exchange/SNOOFI_USDT" target="_blank">
-                      <img src="https://static.wixstatic.com/media/e1f53b_aa84fca9c88b41449106a3c137947e15~mv2.png/v1/fill/w_256,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/mexc.png" />
+                      <Image src="/exchanges/mexc.png" width={256} height={39} alt="MEXC" />
                     </Link>
 
                     <Link href="https://www.lbank.com/trade/snoofi_usdt" target="_blank">
-                      <img src="https://static.wixstatic.com/media/e1f53b_8d0bb7a4face46b7b5471e44dacfbe54~mv2.png/v1/fill/w_190,h_54,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/lbank.png" />
+                      <Image src="/exchanges/lbank.png" width={190} height={55} alt="Lbank" />
                     </Link>
                   </div>
                 </div>
@@ -169,7 +151,7 @@ export default function Home() {
                       <CardHeader>
                         <CardTitle className="text-base">Taxes</CardTitle>
                       </CardHeader>
-                      <CardContent className="text-3xl font-semibold text-primary">0%</CardContent>
+                      <CardContent className="text-3xl font-semibold text-primary">0/0</CardContent>
                     </Card>
                     <Card>
                       <CardHeader>

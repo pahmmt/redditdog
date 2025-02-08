@@ -1,5 +1,3 @@
-import { DotFilledIcon } from '@radix-ui/react-icons'
-import { MessageCircleMoreIcon, SendIcon } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -8,9 +6,9 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-4 gap-y-8 py-10 max-sm:mx-auto max-sm:max-w-sm sm:grid-cols-4 md:gap-8 lg:grid-cols-6">
           <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-            <a href="/" className="flex justify-center lg:justify-start">
+            <Link href="/" className="flex justify-center lg:justify-start">
               <img src="https://i.imgur.com/nkXyOFF.png" className="h-10" alt="reddit dog | r/snoofi" />
-            </a>
+            </Link>
             <p className="py-8 text-center lg:max-w-sm lg:text-left">
               <strong className="text-lg font-semibold text-primary">Disclaimer:</strong>
               <br />

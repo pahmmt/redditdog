@@ -2,6 +2,7 @@ import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
 import { Menu } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
@@ -37,7 +38,7 @@ export default function Header() {
             <SheetContent side="left">
               <nav className="grid gap-2 font-medium">
                 <Link href="#" className="mb-4 flex items-center gap-2 font-semibold">
-                  <img src="https://i.imgur.com/nkXyOFF.png" className="mr-2 h-10" alt="reddit dog | r/snoofi" />
+                  <Image src="/logo.png" width={159} height={40} className="mr-2" alt="reddit dog | r/snoofi" />
                 </Link>
                 {links.map((link, index) => (
                   <Link
@@ -53,7 +54,7 @@ export default function Header() {
             </SheetContent>
           </Sheet>
           <Link href="#" className="hidden items-center gap-2 font-semibold md:flex">
-            <img src="https://i.imgur.com/nkXyOFF.png" className="mr-2 h-10" alt="reddit dog | r/snoofi" />
+            <Image src="/logo.png" width={159} height={40} className="mr-2" alt="reddit dog | r/snoofi" />
           </Link>
           <div className="hidden md:flex md:items-center md:gap-5 lg:gap-6">
             {links.map((link, index) => (
