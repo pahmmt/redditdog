@@ -30,7 +30,7 @@ export default function Home() {
           <div className="bg-primary">
             <div className="container mx-auto w-full px-4">
               <div className="grid grid-cols-3 justify-between gap-6 py-12">
-                <Image src="/r-snoo.png" width={288} height={288} alt="Reddit Snoofi" className="mx-auto w-full max-w-72" />
+                <Image src="/r-snoo.png" width={288} height={288} alt="Reddit Snoofi" className="mx-auto max-h-72" />
                 <div className="flex flex-col items-center gap-6 text-center">
                   <Image src="/snoo.png" width={134} height={134} alt="Snoofi" />
                   <h1 className="text-6xl font-bold">r/snoofi</h1>
@@ -44,7 +44,7 @@ export default function Home() {
                     </Button>
                   </div>
                 </div>
-                <Image src="/snoo.png" width={288} height={288} alt="Snoofi" className="mx-auto w-full max-w-72 -rotate-45" />
+                <Image src="/snoo.png" width={225} height={288} alt="Snoofi" className="mx-auto max-h-72 -rotate-45" />
               </div>
             </div>
             <div id="howToBuy" className="container mx-auto w-full px-4">
@@ -173,43 +173,28 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-12">
                     <Link href="https://coinmarketcap.com/currencies/r-snoofi/" target="_blank">
-                      <img
-                        src="https://static.wixstatic.com/media/e1f53b_dee14a96f9c94a10b59c8866a4dcbffb~mv2.png/v1/fill/w_70,h_72,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/CoinMarketCap.png"
-                        alt=""
-                      />
+                      <Image src="/exchanges/cmc.png" width={70} height={72} alt="CoinMarketCap" />
                     </Link>
                     <Link href="https://www.coingecko.com/en/coins/r-snoofi" target="_blank">
-                      <img
-                        src="https://static.wixstatic.com/media/e1f53b_60bceb2050e9488ea698e7eb4e0f3c29~mv2.png/v1/fill/w_105,h_105,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/coingecko.png"
-                        alt=""
-                      />
+                    <Image src="/exchanges/coingecko.png" width={105} height={105} alt="CoinGecko" />
                     </Link>
                     <Link
                       href="https://dexscreener.com/solana/4fp4synbkisczqkwufpkcsxwfdbsvmktsnpbnlplyu9q"
                       target="_blank"
                     >
-                      <img
-                        src="https://static.wixstatic.com/media/e1f53b_e2d49f8ba88647a9999b5dddcfd39f60~mv2.png/v1/fill/w_154,h_129,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/dexscreener.png"
-                        alt=""
-                      />
+                      <Image src="/exchanges/dexscreener.png" width={154} height={129} alt="DEXScreener" />
                     </Link>
                     <Link
                       href="https://www.dextools.io/app/en/solana/pair-explorer/4fp4SynBKisCZQkwUFpkcsXwFDBSVMkTSnPBnLpLyU9Q?t=1724251079907"
                       target="_blank"
                     >
-                      <img
-                        src="https://static.wixstatic.com/media/e1f53b_8af9d2c2646245c2837de48445618a39~mv2.png/v1/fill/w_94,h_94,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/dextools.png"
-                        alt=""
-                      />
+                      <Image src="/exchanges/dextools.png" width={94} height={94} alt="DEXTools" />
                     </Link>
                     <Link
                       href="https://birdeye.so/token/7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t?chain=solana"
                       target="_blank"
                     >
-                      <img
-                        src="https://static.wixstatic.com/media/e1f53b_022755a297d74b6e8f16882efd453b91~mv2.png/v1/fill/w_138,h_138,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/birdeye.png"
-                        alt=""
-                      />
+                      <Image src="/exchanges/birdeye.png" width={138} height={138} alt="BirdEye" />
                     </Link>
                   </div>
                 </div>
@@ -221,7 +206,7 @@ export default function Home() {
               <div className="grid grid-cols-1 gap-4 py-12">
                 <div className="flex flex-col items-center gap-6">
                   <h3 className="text-6xl font-bold">Roadmap</h3>
-                  <img src="https://static.wixstatic.com/media/e1f53b_96f56f58c5ef4bfc88e5e2642c25fda5~mv2.jpeg/v1/fill/w_474,h_474,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1f53b_96f56f58c5ef4bfc88e5e2642c25fda5~mv2.jpeg" />
+                  <Image src="/candle.jpeg" width={474} height={474} alt="reddit dog | r/snoofi" />
                   <ol className="list-decimal text-xl">
                     <li>Community growth</li>
                     <li>Spread the memes</li>
@@ -257,11 +242,17 @@ export default function Home() {
                     </Button>
                   </div>
                   <div className="flex items-center gap-4">
-                    <img src="https://static.wixstatic.com/media/e1f53b_a941ce1361a44129bd6fc2ff068e58b1~mv2.webp/v1/fit/w_480,h_480,q_90/e1f53b_a941ce1361a44129bd6fc2ff068e58b1~mv2.webp" />
-                    <img src="https://static.wixstatic.com/media/e1f53b_f62d5ab8332e48339b9fc57121c7d795~mv2.png/v1/fit/w_480,h_480,q_90/e1f53b_f62d5ab8332e48339b9fc57121c7d795~mv2.webp" />
+                    <Image
+                      src="/r-snoo.png"
+                      width={288}
+                      height={288}
+                      alt="Reddit Snoofi"
+                      className="mx-auto max-h-72"
+                    />
+                    <Image src="/snoo.png" width={225} height={288} alt="Snoofi" className="mx-auto max-h-72" />
                   </div>
                   <div>
-                    <img src="https://static.wixstatic.com/media/e1f53b_22e482854bec45e0bd3f1806994a1517~mv2.png/v1/fit/w_480,h_122,q_90/e1f53b_22e482854bec45e0bd3f1806994a1517~mv2.webp" />
+                    <Image src="/logo.png" width={480} height={121} alt="reddit dog | r/snoofi" />
                   </div>
                   <div className="pt-8 text-6xl font-bold">Join the r/snoofi movement.</div>
                   <div className="flex items-center gap-6">
