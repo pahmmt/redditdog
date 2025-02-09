@@ -1,4 +1,4 @@
-import { ArrowRightIcon, PinBottomIcon, StarFilledIcon } from '@radix-ui/react-icons'
+import { ArrowRightIcon, PinBottomIcon } from '@radix-ui/react-icons'
 import localFont from 'next/font/local'
 import Head from 'next/head'
 import Image from 'next/image'
