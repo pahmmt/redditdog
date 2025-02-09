@@ -22,10 +22,10 @@ export default function Footer() {
             <h4 className="mb-7 text-xl font-bold text-primary">Community</h4>
             <ul className="transition-all duration-500">
               <li className="mb-6">
-                <a href="javascript:;">Reddit</a>
+                <a href="https://www.reddit.com/r/snoofi/" target="_blank">Reddit</a>
               </li>
               <li className="mb-6">
-                <a href="javascript:;">Live Chat</a>
+                <a href="https://www.reddit.com/r/snoofi/s/TfNxm9E9Dd" target="_blank">Live Chat</a>
               </li>
             </ul>
           </div>
@@ -33,22 +33,22 @@ export default function Footer() {
             <h4 className="mb-7 text-xl font-bold text-primary">Charts</h4>
             <ul className="transition-all duration-500">
               <li className="mb-6">
-                <a href="javascript:;">DEX Screener</a>
+                <a href="https://dexscreener.com/solana/4fp4synbkisczqkwufpkcsxwfdbsvmktsnpbnlplyu9q" target="_blank">DEX Screener</a>
               </li>
               <li className="mb-6">
-                <a href="javascript:;">DEX Tools</a>
+                <a href="https://www.dextools.io/app/en/solana/pair-explorer/4fp4SynBKisCZQkwUFpkcsXwFDBSVMkTSnPBnLpLyU9Q?t=1724083202142" target="_blank">DEX Tools</a>
               </li>
               <li className="mb-6">
-                <a href="javascript:;">Gecko Terminal</a>
+                <a href="https://www.geckoterminal.com/solana/pools/4fp4SynBKisCZQkwUFpkcsXwFDBSVMkTSnPBnLpLyU9Q" target="_blank">Gecko Terminal</a>
               </li>
               <li className="mb-6">
-                <a href="javascript:;">Coin Gecko</a>
+                <a href="https://www.coingecko.com/en/coins/r-snoofi" target="_blank">Coin Gecko</a>
               </li>
               <li className="mb-6">
-                <a href="javascript:;">Coin Market Cap</a>
+                <a href="https://coinmarketcap.com/currencies/r-snoofi/" target="_blank">Coin Market Cap</a>
               </li>
               <li>
-                <a href="javascript:;">Bird Eye</a>
+                <a href="https://birdeye.so/token/7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t?chain=solana" target="_blank">Bird Eye</a>
               </li>
             </ul>
           </div>
@@ -56,16 +56,16 @@ export default function Footer() {
             <h4 className="mb-7 text-xl font-bold text-primary">Exchanges</h4>
             <ul className="transition-all duration-500">
               <li className="mb-6">
-                <a href="javascript:;">Raydium (DEX)</a>
+                <a href="https://raydium.io/swap/?inputMint=sol&outputMint=7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t" target="_blank">Raydium (DEX)</a>
               </li>
               <li className="mb-6">
-                <a href="javascript:;">Jupiter (DEX)</a>
+                <a href="https://jup.ag/swap/SOL-7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t" target="_blank">Jupiter (DEX)</a>
               </li>
               <li className="mb-6">
-                <a href="javascript:;">MEXC (CEX)</a>
+                <a href="https://www.mexc.com/exchange/SNOOFI_USDT" target="_blank">MEXC (CEX)</a>
               </li>
               <li>
-                <a href="javascript:;">LBank (CEX)</a>
+                <a href="https://www.lbank.com/trade/snoofi_usdt" target="_blank">LBank (CEX)</a>
               </li>
             </ul>
           </div>
@@ -75,7 +75,7 @@ export default function Footer() {
             <span className="text-gray-500">© 2024 reddit dog (r/snoofi). All rights reserved.</span>
             <div className="mt-4 flex space-x-4 sm:justify-center lg:mt-0">
               <a
-                href="jhttps://jup.ag/swap/SOL-7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t"
+                href="https://www.reddit.com/r/snoofi/"
                 target="_blank"
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-primary"
               >
@@ -88,7 +88,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="javascript:;"
+                href="https://x.com/snoofi_sol"
                 target="_blank"
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-primary"
               >
