@@ -74,17 +74,25 @@ export default function Footer() {
           <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between">
             <span className="text-gray-500">© 2024 reddit dog (r/snoofi). All rights reserved.</span>
             <div className="mt-4 flex space-x-4 sm:justify-center lg:mt-0">
-              <a href="javascript:;" className="flex h-9 w-9 items-center justify-center rounded-full bg-primary">
-                <svg width="20" height="20" viewBox="0 -1.5 20 20" xmlns="http://www.w3.org/2000/svg">
+              <a
+                href="jhttps://jup.ag/swap/SOL-7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t"
+                target="_blank"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-primary"
+              >
+                <svg className="size-5" viewBox="0 -1.5 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M13.029 11.247a1.407 1.407 0 0 1-1.401-1.397c0-.773.639-1.419 1.401-1.419.761 0 1.378.646 1.378 1.419 0 .772-.616 1.397-1.378 1.397m.194 2.583c-.673.681-1.728 1.013-3.224 1.013-1.497 0-2.551-.332-3.223-1.013a.383.383 0 0 1 0-.537.37.37 0 0 1 .528 0c.525.533 1.406.792 2.695.792 1.288 0 2.17-.26 2.696-.792a.37.37 0 0 1 .528 0 .383.383 0 0 1 0 .537M5.592 9.85c0-.772.638-1.419 1.399-1.419s1.378.647 1.378 1.419-.617 1.397-1.378 1.397A1.406 1.406 0 0 1 5.592 9.85M20 8.313c0-1.266-1.016-2.297-2.265-2.297-.576 0-1.119.218-1.535.609-1.495-.987-3.497-1.625-5.714-1.712l1.223-3.786 3.212.767c.001 1.042.837 1.889 1.865 1.889s1.865-.849 1.865-1.892C18.651.85 17.814 0 16.786 0c-.77 0-1.431.475-1.716 1.151L11.212.23l-1.51 4.676c-2.301.043-4.386.678-5.937 1.688a2.239 2.239 0 0 0-1.501-.577C1.016 6.016 0 7.046 0 8.313c0 .805.414 1.542 1.076 1.956C.473 13.88 4.67 17 9.958 17c5.266 0 9.449-3.091 8.891-6.686a2.287 2.287 0 0 0 1.151-2"
                     fill="white"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   />
                 </svg>
               </a>
-              <a href="javascript:;" className="flex h-9 w-9 items-center justify-center rounded-full bg-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <a
+                href="javascript:;"
+                target="_blank"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-primary"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="size-5" viewBox="0 0 20 20" fill="none">
                   <g>
                     <path
                       id="Vector"
@@ -94,11 +102,15 @@ export default function Footer() {
                   </g>
                 </svg>
               </a>
-              <a href="javascript:;" className="flex h-9 w-9 items-center justify-center rounded-full bg-primary">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a
+                href="javascript:;"
+                target="_blank"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-primary"
+              >
+                <svg className="size-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M23.112 4.494c.318-1.55-1.205-2.837-2.68-2.267L2.342 9.216c-1.647.637-1.72 2.941-.117 3.682l3.94 1.818 1.873 6.559a1 1 0 0 0 1.67.432l2.886-2.887 4.043 3.033a2 2 0 0 0 3.16-1.198l3.315-16.16ZM3.063 11.082l18.09-6.99-3.316 16.161L13.1 16.7a1 1 0 0 0-1.307.093l-1.236 1.236.371-2.043 7.28-7.279a1 1 0 0 0-1.204-1.575L6.95 12.876l-3.888-1.794Zm5.114 3.397.606 2.123.233-1.281a1 1 0 0 1 .277-.528l2.22-2.22-3.336 1.906Z"
                     fill="white"
                   />

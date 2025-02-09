@@ -22,6 +22,7 @@ export default function Header() {
       newTab: true,
     },
     { href: '#', text: 'PFP Generator', newTab: false },
+    { href: 'https://r-snoofi.myshopify.com/collections/all', text: 'Shop', newTab: true },
   ]
 
   return (
@@ -84,7 +85,7 @@ export default function Header() {
               <DropdownMenuItem onClick={() => setTheme('system')}>System</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button className="rounded-full font-semibold" asChild>
+          <Button className="rounded-full font-semibold text-lg" asChild>
             <Link href="https://jup.ag/swap/SOL-7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t" target="_blank">
               Buy r/snoofi
             </Link>
