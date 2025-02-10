@@ -1,4 +1,4 @@
-import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
+import { ChevronDownIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons'
 import { Menu } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
@@ -7,9 +7,17 @@ import React from 'react'
 
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import { charts, exchanges } from '@/config/links'
 import { cn } from '@/lib/utils'
 
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '../ui/dropdown-menu'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '../ui/dropdown-menu'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -22,65 +30,6 @@ import {
 
 export default function Header() {
   const { setTheme } = useTheme()
-
-  const links = [
-    { href: '#howToBuy', text: 'How to Buy', newTab: false },
-    { href: '#tokenomics', text: 'Tokenomics', newTab: false },
-    { href: 'https://www.reddit.com/r/snoofi/', text: 'Community', newTab: true },
-    {
-      href: 'https://dexscreener.com/solana/4fp4synbkisczqkwufpkcsxwfdbsvmktsnpbnlplyu9q',
-      text: 'Chart',
-      newTab: true,
-    },
-    //{ href: '#', text: 'PFP Generator', newTab: false },
-    { href: 'https://r-snoofi.myshopify.com/collections/all', text: 'Shop', newTab: true },
-  ]
-
-  const charts: { title: string; href: string }[] = [
-    {
-      title: 'DEX Screener',
-      href: 'https://dexscreener.com/solana/4fp4synbkisczqkwufpkcsxwfdbsvmktsnpbnlplyu9q',
-    },
-    {
-      title: 'DEX Tools',
-      href: 'https://www.dextools.io/app/en/solana/pair-explorer/4fp4SynBKisCZQkwUFpkcsXwFDBSVMkTSnPBnLpLyU9Q?t=1724083202142',
-    },
-    {
-      title: 'Gecko Terminal',
-      href: 'https://www.geckoterminal.com/solana/pools/4fp4SynBKisCZQkwUFpkcsXwFDBSVMkTSnPBnLpLyU9Q',
-    },
-    {
-      title: 'Coin Gecko',
-      href: 'https://www.coingecko.com/en/coins/r-snoofi',
-    },
-    {
-      title: 'Coin Market Cap',
-      href: 'https://coinmarketcap.com/currencies/r-snoofi/',
-    },
-    {
-      title: 'Bird Eye',
-      href: 'https://birdeye.so/token/7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t?chain=solana',
-    },
-  ]
-
-  const exchanges: { title: string; href: string }[] = [
-    {
-      title: 'Raydium (DEX)',
-      href: 'https://raydium.io/swap/?inputMint=sol&outputMint=7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t',
-    },
-    {
-      title: 'Jupiter (DEX)',
-      href: 'https://jup.ag/swap/SOL-7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t',
-    },
-    {
-      title: 'MEXC (CEX)',
-      href: 'https://www.mexc.com/exchange/SNOOFI_USDT',
-    },
-    {
-      title: 'LBANK (CEX)',
-      href: 'https://www.lbank.com/trade/snoofi_usdt',
-    },
-  ]
 
   const ListItem = React.forwardRef<React.ElementRef<'a'>, React.ComponentPropsWithoutRef<'a'>>(
     ({ className, children, ...props }, ref) => {
@@ -120,16 +69,64 @@ export default function Header() {
                 <Link href="#" className="mb-4 flex items-center gap-2 font-semibold">
                   <Image src="/logo.png" width={159} height={40} className="mr-2" alt="reddit dog | r/snoofi" />
                 </Link>
-                {links.map((link, index) => (
-                  <Link
-                    key={index}
-                    href={link.href}
-                    className="rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary"
-                    target={link.newTab ? '_blank' : undefined}
-                  >
-                    {link.text}
-                  </Link>
-                ))}
+                <Link
+                  href="#howToBuy"
+                  className="rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary"
+                >
+                  How to Buy
+                </Link>
+                <Link
+                  href="#howToBuy"
+                  className="rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary"
+                >
+                  Tokenomics
+                </Link>
+                <Link
+                  href="https://www.reddit.com/r/snoofi/"
+                  className="rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary"
+                  target="_blank"
+                >
+                  Community
+                </Link>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <div className="flex items-center gap-2 rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary">
+                      Charts <ChevronDownIcon />
+                    </div>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    {charts.map((component) => (
+                      <DropdownMenuItem key={component.title}>
+                        <Link href={component.href} target="_blank">
+                          {component.title}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <div className="flex items-center gap-2 rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary">
+                      Exchanges <ChevronDownIcon />
+                    </div>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    {exchanges.map((component) => (
+                      <DropdownMenuItem key={component.title}>
+                        <Link href={component.href} target="_blank">
+                          {component.title}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+                <Link
+                  href="https://r-snoofi.myshopify.com/collections/all"
+                  className="rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary"
+                  target="_blank"
+                >
+                  Shop
+                </Link>
               </nav>
             </SheetContent>
           </Sheet>
