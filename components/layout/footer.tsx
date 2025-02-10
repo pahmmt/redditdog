@@ -120,7 +120,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="https://www.lbank.com/trade/snoofi_usdt" target="_blank" className="hover:text-primary">
-                  LBank (CEX)
+                  LBANK (CEX)
                 </a>
               </li>
             </ul>
