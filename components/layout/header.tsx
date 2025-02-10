@@ -10,12 +10,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { charts, exchanges } from '@/config/links'
 import { cn } from '@/lib/utils'
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '../ui/dropdown-menu'
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '../ui/dropdown-menu'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -69,26 +64,26 @@ export default function Header() {
                 </Link>
                 <Link
                   href="#howToBuy"
-                  className="rounded-md px-4 py-2 text-md text-foreground hover:bg-secondary hover:text-primary"
+                  className="text-md rounded-md px-4 py-2 text-foreground hover:bg-secondary hover:text-primary"
                 >
                   How to Buy
                 </Link>
                 <Link
                   href="#howToBuy"
-                  className="rounded-md px-4 py-2 text-md text-foreground hover:bg-secondary hover:text-primary"
+                  className="text-md rounded-md px-4 py-2 text-foreground hover:bg-secondary hover:text-primary"
                 >
                   Tokenomics
                 </Link>
                 <Link
                   href="https://www.reddit.com/r/snoofi/"
-                  className="rounded-md px-4 py-2 text-md text-foreground hover:bg-secondary hover:text-primary"
+                  className="text-md rounded-md px-4 py-2 text-foreground hover:bg-secondary hover:text-primary"
                   target="_blank"
                 >
                   Community
                 </Link>
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <div className="flex items-center gap-2 rounded-md px-4 py-2 text-md text-foreground hover:bg-secondary hover:text-primary">
+                    <div className="text-md flex items-center gap-2 rounded-md px-4 py-2 text-foreground hover:bg-secondary hover:text-primary">
                       Charts <ChevronDownIcon />
                     </div>
                   </DropdownMenuTrigger>
@@ -104,7 +99,7 @@ export default function Header() {
                 </DropdownMenu>
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <div className="flex items-center gap-2 rounded-md px-4 py-2 text-md text-foreground hover:bg-secondary hover:text-primary">
+                    <div className="text-md flex items-center gap-2 rounded-md px-4 py-2 text-foreground hover:bg-secondary hover:text-primary">
                       Exchanges <ChevronDownIcon />
                     </div>
                   </DropdownMenuTrigger>
@@ -135,14 +130,18 @@ export default function Header() {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <Link href="#howToBuy" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>How to Buy</NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink asChild>
+                    <Link href="#howToBuy" className={navigationMenuTriggerStyle()}>
+                      How to Buy
+                    </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/tokenomics" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>Tokenomics</NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink asChild>
+                    <Link href="#tokenomics" className={navigationMenuTriggerStyle()}>
+                      Tokenomics
+                    </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="https://www.reddit.com/r/snoofi/" legacyBehavior passHref>
@@ -154,7 +153,7 @@ export default function Header() {
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                       {charts.map((component) => (
-                        <ListItem key={component.title} href={component.href}>
+                        <ListItem key={component.title} href={component.href} target="_blank">
                           {component.title}
                         </ListItem>
                       ))}
@@ -166,7 +165,7 @@ export default function Header() {
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                       {exchanges.map((component) => (
-                        <ListItem key={component.title} href={component.href}>
+                        <ListItem key={component.title} href={component.href} target="_blank">
                           {component.title}
                         </ListItem>
                       ))}
@@ -174,9 +173,15 @@ export default function Header() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="https://r-snoofi.myshopify.com/collections/all" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>Shop</NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="https://r-snoofi.myshopify.com/collections/all"
+                      target="_blank"
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Shop
+                    </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
