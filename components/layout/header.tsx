@@ -31,7 +31,7 @@ export default function Header() {
         <div className="flex items-center gap-8 lg:gap-10">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="shrink-0 md:hidden">
+              <Button variant="outline" size="icon" className="shrink-0 lg:hidden">
                 <Menu className="size-5" />
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
@@ -54,10 +54,10 @@ export default function Header() {
               </nav>
             </SheetContent>
           </Sheet>
-          <Link href="#" className="hidden items-center gap-2 font-semibold md:flex">
+          <Link href="#" className="hidden items-center gap-2 font-semibold lg:flex">
             <Image src="/logo.png" width={159} height={40} className="mr-2" alt="reddit dog | r/snoofi" />
           </Link>
-          <div className="hidden md:flex md:items-center md:gap-5 lg:gap-6">
+          <div className="hidden lg:flex lg:items-center lg:gap-6">
             {links.map((link, index) => (
               <Link
                 key={index}

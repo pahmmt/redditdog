@@ -29,13 +29,19 @@ export default function Home() {
         <main className="flex flex-col">
           <div className="bg-primary">
             <div className="container mx-auto w-full px-4">
-              <div className="grid grid-cols-3 justify-between gap-6 py-12">
+              <div className="grid grid-cols-1 justify-between gap-4 py-12 text-center sm:grid-cols-3 sm:gap-6">
                 <Image src="/r-snoo.png" width={288} height={288} alt="Reddit Snoofi" className="mx-auto max-h-72" />
                 <div className="flex flex-col items-center gap-6 text-center">
-                  <Image src="/snoo.png" width={134} height={134} alt="Snoofi" />
+                  <Image src="/snoo.png" width={134} height={134} alt="Snoofi" className="hidden sm:block" />
                   <h1 className="text-6xl font-bold">r/snoofi</h1>
                   <div>stumbled my way from the blockchain to reddit.</div>
-                  <div>Contract Address (CA): 7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t</div>
+                  <div className="break-all">
+                    <div className="flex items-center justify-center gap-2">
+                      <Image src="/solscan.png" width={20} height={20} alt="Solscan" className="dark:invert" /> Contract
+                      Address (CA):
+                    </div>
+                    <div>7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t</div>
+                  </div>
                   <div>
                     <Button variant="outline" className="rounded-full text-lg font-semibold" asChild>
                       <Link href="https://www.reddit.com/r/snoofi/" className="flex items-center gap-2" target="_blank">
@@ -48,11 +54,11 @@ export default function Home() {
               </div>
             </div>
             <div id="howToBuy" className="container mx-auto w-full px-4">
-              <div className="grid grid-cols-1 gap-4 py-12">
+              <div className="grid grid-cols-1 gap-4 py-12 text-center">
                 <div className="flex flex-col items-center gap-6">
                   <h3 className="text-6xl font-bold">How to Buy</h3>
                   <div>r/snoofi is available on decentralized and centralized exchanges.</div>
-                  <div className="grid grid-cols-3 gap-8">
+                  <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <Card>
                       <CardHeader>
                         <CardTitle>
@@ -94,6 +100,13 @@ export default function Home() {
                           Click on the r/snoofi token, then click &#34;Buy&#34;.
                         </p>
                         <p>Credit, Debit, Apple Pay, Paypal</p>
+                        <p>
+                          <Button variant="outline" className="rounded-full text-lg font-semibold" asChild>
+                            <Link href="https://moonshot.money" target="_blank" className="flex items-center gap-2">
+                              <PinBottomIcon /> Download Moonshot app
+                            </Link>
+                          </Button>
+                        </p>
                       </CardContent>
                     </Card>
                   </div>
@@ -101,25 +114,11 @@ export default function Home() {
               </div>
             </div>
             <div className="container mx-auto w-full px-4">
-              <div className="grid grid-cols-1 gap-4 py-12">
+              <div className="grid grid-cols-1 gap-4 py-12 text-center">
                 <div className="flex flex-col items-center gap-6">
-                  <h3 className="inline-flex items-center gap-4 text-6xl font-bold text-white">
-                    <span>Get</span>
-                    <Link href="https://moonshot.money" target="_blank">
-                      <Image src="/exchanges/moonshot_light.png" width={288} height={48} alt="Moonshot" />
-                    </Link>
-                    <span>& earn up to $100</span>
-                  </h3>
-                  <div>
-                    <Button variant="outline" className="rounded-full text-lg font-semibold" asChild>
-                      <Link href="https://moonshot.money" target="_blank" className="flex items-center gap-2">
-                        <PinBottomIcon /> Download Moonshot app
-                      </Link>
-                    </Button>
-                  </div>
                   <div className="flex flex-col text-center">
                     <div className="text-xl font-semibold">Find r/snoofi on these</div>
-                    <div className="inline-flex items-center gap-4 text-4xl font-bold">Centralized Exchanges</div>
+                    <h3 className="text-6xl font-bold">Centralized Exchanges</h3>
                   </div>
                   <div className="flex flex-wrap items-center justify-center gap-16">
                     <Link href="https://www.mexc.com/exchange/SNOOFI_USDT" target="_blank">
@@ -136,11 +135,11 @@ export default function Home() {
           </div>
           <div id="tokenomics" className="bg-neutral-950 text-white">
             <div className="container mx-auto w-full px-4">
-              <div className="grid grid-cols-1 gap-4 py-12">
+              <div className="grid grid-cols-1 gap-4 py-12 text-center">
                 <div className="flex flex-col items-center gap-6">
                   <h3 className="text-6xl font-bold">Tokenomics</h3>
                   <div>r/snoofi is a decentralized, community driven meme token on Solana.</div>
-                  <div className="grid grid-cols-3 gap-8">
+                  <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
                     <Card>
                       <CardHeader>
                         <CardTitle className="text-base">Total Supply</CardTitle>
@@ -185,7 +184,7 @@ export default function Home() {
                       </Link>
                     </Button>
                   </div>
-                  <div className="flex items-center gap-12">
+                  <div className="flex items-center justify-center gap-4 md:gap-12">
                     <Link href="https://coinmarketcap.com/currencies/r-snoofi/" target="_blank">
                       <Image src="/exchanges/cmc.png" width={70} height={72} alt="CoinMarketCap" />
                     </Link>
@@ -232,11 +231,11 @@ export default function Home() {
           </div>
           <div>
             <div className="container mx-auto w-full px-4">
-              <div className="grid grid-cols-1 gap-4 py-12">
+              <div className="grid grid-cols-1 gap-4 py-12 text-center">
                 <div className="flex flex-col items-center gap-6">
                   <h3 className="text-6xl font-bold">Branding</h3>
                   <div>Community-made artwork & memes to share with everyone.</div>
-                  <div className="flex items-center gap-4">
+                  <div className="flex flex-wrap items-center justify-center gap-4">
                     <Button className="flex items-center gap-2 rounded-full text-xl font-semibold" asChild>
                       <Link href="https://x.com/search?q=snoofi&src=typed_query&f=live" target="_blank">
                         Find more on
@@ -261,15 +260,27 @@ export default function Home() {
                       width={288}
                       height={288}
                       alt="Reddit Snoofi"
-                      className="mx-auto max-h-72"
+                      className="mx-auto max-h-40 w-auto md:max-h-72"
                     />
-                    <Image src="/snoo.png" width={225} height={288} alt="Snoofi" className="mx-auto max-h-72" />
+                    <Image
+                      src="/snoo.png"
+                      width={225}
+                      height={288}
+                      alt="Snoofi"
+                      className="mx-auto max-h-40 w-auto md:max-h-72"
+                    />
                   </div>
                   <div>
-                    <Image src="/logo.png" width={480} height={121} alt="reddit dog | r/snoofi" />
+                    <Image
+                      src="/logo.png"
+                      width={480}
+                      height={121}
+                      alt="reddit dog | r/snoofi"
+                      className="max-w-full"
+                    />
                   </div>
                   <div className="pt-8 text-6xl font-bold">Join the r/snoofi movement.</div>
-                  <div className="flex items-center gap-6">
+                  <div className="flex flex-wrap items-center justify-center gap-6">
                     <span className="text-5xl text-primary">Only on Reddit.</span>
                     <Button className="rounded-full text-xl font-bold" asChild>
                       <Link
