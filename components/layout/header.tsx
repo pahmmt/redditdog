@@ -83,7 +83,7 @@ export default function Header() {
   ]
 
   const ListItem = React.forwardRef<React.ElementRef<'a'>, React.ComponentPropsWithoutRef<'a'>>(
-    ({ className, title, children, ...props }, ref) => {
+    ({ className, title, ...props }, ref) => {
       return (
         <li>
           <NavigationMenuLink asChild>
@@ -95,7 +95,7 @@ export default function Header() {
               )}
               {...props}
             >
-              <div className="text-lg font-medium leading-none">{children}</div>
+              <div className="text-lg font-medium leading-none">{title}</div>
             </a>
           </NavigationMenuLink>
         </li>
