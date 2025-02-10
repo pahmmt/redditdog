@@ -28,8 +28,15 @@ export default function Footer() {
                 </a>
               </li>
               <li className="mb-6">
-                <a href="https://www.reddit.com/r/snoofi/s/TfNxm9E9Dd" target="_blank">
+                <a
+                  href="https://www.reddit.com/r/snoofi/s/TfNxm9E9Dd"
+                  target="_blank"
+                  className="flex items-center gap-3"
+                >
                   Live Chat
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="size-2 fill-green-500">
+                    <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z" />
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -139,11 +146,7 @@ export default function Footer() {
                   </g>
                 </svg>
               </a>
-              <a
-                href="#"
-                target="_blank"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-primary"
-              >
+              <a href="#" target="_blank" className="flex h-9 w-9 items-center justify-center rounded-full bg-primary">
                 <svg className="size-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fillRule="evenodd"
