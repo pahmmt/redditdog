@@ -253,7 +253,7 @@ export default function Home() {
                     <li>Community growth</li>
                     <li>Spread the memes</li>
                     <li>Onboard redditors to crypto</li>
-                    <li>Flip Reddit stock</li>
+                    <li>Flip the Reddit stock</li>
                   </ol>
                 </div>
               </div>
