@@ -317,7 +317,7 @@ export default function Home() {
                     <span className="text-5xl text-primary">Only on Reddit.</span>
                     <Button className="rounded-full text-xl font-bold" asChild>
                       <Link
-                        href="https://jup.ag/swap/SOL-7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t"
+                        href="https://www.reddit.com/r/snoofi/"
                         target="_blank"
                         className="flex items-center gap-2"
                       >
