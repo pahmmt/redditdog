@@ -22,7 +22,10 @@ export default function Home() {
       <Head>
         <title>reddit dog (r/snoofi) | stumbled my way from the blockchain to reddit</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Snoofi is a memecoin with no intrinsic value, no profit plans, and no central issuer—purely for entertainment. Not affiliated with Reddit, Inc. or its mascot, Snoo." />
+        <meta
+          name="description"
+          content="Snoofi is a memecoin with no intrinsic value, no profit plans, and no central issuer—purely for entertainment. Not affiliated with Reddit, Inc. or its mascot, Snoo."
+        />
       </Head>
       <div
         className={`${redditSans.variable} flex min-h-screen flex-col font-[family-name:var(--font-geist-mono)] text-lg font-medium`}
@@ -31,8 +34,14 @@ export default function Home() {
         <main className="flex flex-col">
           <div className="bg-primary">
             <div className="container mx-auto w-full px-4">
-              <div className="grid grid-cols-1 justify-between gap-4 py-12 text-center sm:grid-cols-3 sm:gap-6">
-                <Image src="/r-snoo.png" width={288} height={288} alt="Reddit Snoofi" className="mx-auto max-h-72" />
+              <div className="grid grid-cols-1 justify-between gap-4 py-8 md:py-12 text-center sm:grid-cols-3 sm:gap-6">
+                <Image
+                  src="/r-snoo.png"
+                  width={381}
+                  height={381}
+                  alt="Reddit Snoofi"
+                  className="mx-auto max-h-48 w-auto md:max-h-60 lg:max-h-72"
+                />
                 <div className="flex flex-col items-center gap-6 text-center">
                   <Image src="/snoo.png" width={134} height={134} alt="Snoofi" className="hidden sm:block" />
                   <h1 className="text-6xl font-bold">r/snoofi</h1>
@@ -52,11 +61,17 @@ export default function Home() {
                     </Button>
                   </div>
                 </div>
-                <Image src="/snoo.png" width={225} height={288} alt="Snoofi" className="mx-auto max-h-72 -rotate-45" />
+                <Image
+                  src="/snoo.png"
+                  width={381}
+                  height={381}
+                  alt="Snoofi"
+                  className="mx-auto max-h-48 w-auto -rotate-45 md:max-h-60 lg:max-h-72"
+                />
               </div>
             </div>
             <div id="howToBuy" className="container mx-auto w-full px-4">
-              <div className="grid grid-cols-1 gap-4 py-12 text-center">
+              <div className="grid grid-cols-1 gap-4 py-8 md:py-12 text-center">
                 <div className="flex flex-col items-center gap-6">
                   <h3 className="text-6xl font-bold">How to Buy</h3>
                   <div>r/snoofi is available on decentralized and centralized exchanges.</div>
@@ -116,19 +131,31 @@ export default function Home() {
               </div>
             </div>
             <div className="container mx-auto w-full px-4">
-              <div className="grid grid-cols-1 gap-4 py-12 text-center">
+              <div className="grid grid-cols-1 gap-4 py-8 md:py-12 text-center">
                 <div className="flex flex-col items-center gap-6">
                   <div className="flex flex-col text-center">
                     <div className="text-xl font-semibold">Find r/snoofi on these</div>
                     <h3 className="text-6xl font-bold">Centralized Exchanges</h3>
                   </div>
-                  <div className="flex flex-wrap items-center justify-center gap-16">
+                  <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-16">
                     <Link href="https://www.mexc.com/exchange/SNOOFI_USDT" target="_blank">
-                      <Image src="/exchanges/mexc.png" width={256} height={39} alt="MEXC" />
+                      <Image
+                        src="/exchanges/mexc.png"
+                        width={256}
+                        height={41}
+                        alt="MEXC"
+                        className="h-auto max-w-48 md:max-w-64"
+                      />
                     </Link>
 
                     <Link href="https://www.lbank.com/trade/snoofi_usdt" target="_blank">
-                      <Image src="/exchanges/lbank.png" width={190} height={55} alt="Lbank" />
+                      <Image
+                        src="/exchanges/lbank.png"
+                        width={256}
+                        height={41}
+                        alt="Lbank"
+                        className="h-auto max-w-48 md:max-w-64"
+                      />
                     </Link>
                   </div>
                 </div>
@@ -137,7 +164,7 @@ export default function Home() {
           </div>
           <div id="tokenomics" className="bg-neutral-950 text-white">
             <div className="container mx-auto w-full px-4">
-              <div className="grid grid-cols-1 gap-4 py-12 text-center">
+              <div className="grid grid-cols-1 gap-4 py-8 md:py-12 text-center">
                 <div className="flex flex-col items-center gap-6">
                   <h3 className="text-6xl font-bold">Tokenomics</h3>
                   <div>r/snoofi is a decentralized, community driven meme token on Solana.</div>
@@ -218,7 +245,7 @@ export default function Home() {
           </div>
           <div className="bg-primary">
             <div className="container mx-auto w-full px-4">
-              <div className="grid grid-cols-1 gap-4 py-12">
+              <div className="grid grid-cols-1 gap-4 py-8 md:py-12">
                 <div className="flex flex-col items-center gap-6">
                   <h3 className="text-6xl font-bold">Roadmap</h3>
                   <Image src="/candle.jpeg" width={474} height={474} alt="reddit dog | r/snoofi" />
@@ -234,7 +261,7 @@ export default function Home() {
           </div>
           <div>
             <div className="container mx-auto w-full px-4">
-              <div className="grid grid-cols-1 gap-4 py-12 text-center">
+              <div className="grid grid-cols-1 gap-4 py-8 md:py-12 text-center">
                 <div className="flex flex-col items-center gap-6">
                   <h3 className="text-6xl font-bold">Branding</h3>
                   <div>Community-made artwork & memes to share with everyone.</div>
@@ -253,22 +280,25 @@ export default function Home() {
                         </svg>
                       </Link>
                     </Button>
-                    <Button className="flex items-center gap-2 rounded-full text-xl font-semibold" onClick={() => alert('Coming soon.')}>
+                    <Button
+                      className="flex items-center gap-2 rounded-full text-xl font-semibold"
+                      onClick={() => alert('Coming soon.')}
+                    >
                       Create your own profile picture <ArrowRightIcon />
                     </Button>
                   </div>
                   <div className="flex items-center gap-4">
                     <Image
                       src="/r-snoo.png"
-                      width={288}
-                      height={288}
+                      width={381}
+                      height={381}
                       alt="Reddit Snoofi"
                       className="mx-auto max-h-40 w-auto md:max-h-72"
                     />
                     <Image
                       src="/snoo.png"
-                      width={225}
-                      height={288}
+                      width={381}
+                      height={381}
                       alt="Snoofi"
                       className="mx-auto max-h-40 w-auto md:max-h-72"
                     />
@@ -276,8 +306,8 @@ export default function Home() {
                   <div>
                     <Image
                       src="/logo.png"
-                      width={480}
-                      height={121}
+                      width={400}
+                      height={101}
                       alt="reddit dog | r/snoofi"
                       className="max-w-full"
                     />

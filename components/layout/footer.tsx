@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-4 gap-y-8 py-10 max-sm:mx-auto max-sm:max-w-sm sm:grid-cols-4 md:gap-8 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-4 gap-y-8 py-8 md:py-12 max-sm:mx-auto max-sm:max-w-sm sm:grid-cols-4 md:gap-8 lg:grid-cols-6">
           <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
             <Link href="/" className="flex justify-center lg:justify-start">
               <Image src="/logo.png" width={159} height={40} className="mr-2" alt="reddit dog | r/snoofi" />
