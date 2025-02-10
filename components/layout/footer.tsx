@@ -23,7 +23,7 @@ export default function Footer() {
             <h4 className="mb-7 text-xl font-bold text-primary">Community</h4>
             <ul className="transition-all duration-500">
               <li className="mb-6">
-                <a href="https://www.reddit.com/r/snoofi/" target="_blank">
+                <a href="https://www.reddit.com/r/snoofi/" target="_blank" className="hover:text-primary">
                   Reddit
                 </a>
               </li>
@@ -31,7 +31,7 @@ export default function Footer() {
                 <a
                   href="https://www.reddit.com/r/snoofi/s/TfNxm9E9Dd"
                   target="_blank"
-                  className="flex items-center gap-3"
+                  className="flex items-center gap-3 hover:text-primary"
                 >
                   Live Chat
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="size-2 fill-green-500">
@@ -45,7 +45,11 @@ export default function Footer() {
             <h4 className="mb-7 text-xl font-bold text-primary">Charts</h4>
             <ul className="transition-all duration-500">
               <li className="mb-6">
-                <a href="https://dexscreener.com/solana/4fp4synbkisczqkwufpkcsxwfdbsvmktsnpbnlplyu9q" target="_blank">
+                <a
+                  href="https://dexscreener.com/solana/4fp4synbkisczqkwufpkcsxwfdbsvmktsnpbnlplyu9q"
+                  target="_blank"
+                  className="hover:text-primary"
+                >
                   DEX Screener
                 </a>
               </li>
@@ -53,6 +57,7 @@ export default function Footer() {
                 <a
                   href="https://www.dextools.io/app/en/solana/pair-explorer/4fp4SynBKisCZQkwUFpkcsXwFDBSVMkTSnPBnLpLyU9Q?t=1724083202142"
                   target="_blank"
+                  className="hover:text-primary"
                 >
                   DEX Tools
                 </a>
@@ -61,17 +66,18 @@ export default function Footer() {
                 <a
                   href="https://www.geckoterminal.com/solana/pools/4fp4SynBKisCZQkwUFpkcsXwFDBSVMkTSnPBnLpLyU9Q"
                   target="_blank"
+                  className="hover:text-primary"
                 >
                   Gecko Terminal
                 </a>
               </li>
               <li className="mb-6">
-                <a href="https://www.coingecko.com/en/coins/r-snoofi" target="_blank">
+                <a href="https://www.coingecko.com/en/coins/r-snoofi" target="_blank" className="hover:text-primary">
                   Coin Gecko
                 </a>
               </li>
               <li className="mb-6">
-                <a href="https://coinmarketcap.com/currencies/r-snoofi/" target="_blank">
+                <a href="https://coinmarketcap.com/currencies/r-snoofi/" target="_blank" className="hover:text-primary">
                   Coin Market Cap
                 </a>
               </li>
@@ -79,6 +85,7 @@ export default function Footer() {
                 <a
                   href="https://birdeye.so/token/7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t?chain=solana"
                   target="_blank"
+                  className="hover:text-primary"
                 >
                   Bird Eye
                 </a>
@@ -92,22 +99,27 @@ export default function Footer() {
                 <a
                   href="https://raydium.io/swap/?inputMint=sol&outputMint=7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t"
                   target="_blank"
+                  className="hover:text-primary"
                 >
                   Raydium (DEX)
                 </a>
               </li>
               <li className="mb-6">
-                <a href="https://jup.ag/swap/SOL-7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t" target="_blank">
+                <a
+                  href="https://jup.ag/swap/SOL-7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t"
+                  target="_blank"
+                  className="hover:text-primary"
+                >
                   Jupiter (DEX)
                 </a>
               </li>
               <li className="mb-6">
-                <a href="https://www.mexc.com/exchange/SNOOFI_USDT" target="_blank">
+                <a href="https://www.mexc.com/exchange/SNOOFI_USDT" target="_blank" className="hover:text-primary">
                   MEXC (CEX)
                 </a>
               </li>
               <li>
-                <a href="https://www.lbank.com/trade/snoofi_usdt" target="_blank">
+                <a href="https://www.lbank.com/trade/snoofi_usdt" target="_blank" className="hover:text-primary">
                   LBank (CEX)
                 </a>
               </li>
