@@ -186,30 +186,30 @@ export default function Home() {
                       </Link>
                     </Button>
                   </div>
-                  <div className="flex items-center justify-center gap-4 md:gap-12">
+                  <div className="flex items-center justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-16">
                     <Link href="https://coinmarketcap.com/currencies/r-snoofi/" target="_blank">
-                      <Image src="/exchanges/cmc.png" width={70} height={72} alt="CoinMarketCap" />
+                      <Image src="/exchanges/cmc.png" width={75} height={79} alt="CoinMarketCap" />
                     </Link>
                     <Link href="https://www.coingecko.com/en/coins/r-snoofi" target="_blank">
-                      <Image src="/exchanges/coingecko.png" width={105} height={105} alt="CoinGecko" />
+                      <Image src="/exchanges/coingecko.png" width={75} height={79} alt="CoinGecko" />
                     </Link>
                     <Link
                       href="https://dexscreener.com/solana/4fp4synbkisczqkwufpkcsxwfdbsvmktsnpbnlplyu9q"
                       target="_blank"
                     >
-                      <Image src="/exchanges/dexscreener.png" width={154} height={129} alt="DEXScreener" />
+                      <Image src="/exchanges/dexscreener.png" width={75} height={79} alt="DEXScreener" />
                     </Link>
                     <Link
                       href="https://www.dextools.io/app/en/solana/pair-explorer/4fp4SynBKisCZQkwUFpkcsXwFDBSVMkTSnPBnLpLyU9Q?t=1724251079907"
                       target="_blank"
                     >
-                      <Image src="/exchanges/dextools.png" width={94} height={94} alt="DEXTools" />
+                      <Image src="/exchanges/dextools.png" width={75} height={79} alt="DEXTools" />
                     </Link>
                     <Link
                       href="https://birdeye.so/token/7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t?chain=solana"
                       target="_blank"
                     >
-                      <Image src="/exchanges/birdeye.png" width={138} height={138} alt="BirdEye" />
+                      <Image src="/exchanges/birdeye.png" width={75} height={79} alt="BirdEye" />
                     </Link>
                   </div>
                 </div>
