@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { charts, exchanges } from '@/config/links'
+
 export default function Footer() {
   return (
     <footer className="bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-4 gap-y-8 py-8 md:py-12 max-sm:mx-auto max-sm:max-w-sm sm:grid-cols-4 md:gap-8 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-4 gap-y-8 py-8 max-sm:mx-auto max-sm:max-w-sm sm:grid-cols-4 md:gap-8 md:py-12 lg:grid-cols-6">
           <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
             <Link href="/" className="flex justify-center lg:justify-start">
               <Image src="/logo.png" width={159} height={40} className="mr-2" alt="reddit dog | r/snoofi" />
@@ -44,85 +46,25 @@ export default function Footer() {
           <div className="text-left lg:mx-auto">
             <h4 className="mb-7 text-xl font-bold text-primary">Charts</h4>
             <ul className="transition-all duration-500">
-              <li className="mb-6">
-                <a
-                  href="https://dexscreener.com/solana/4fp4synbkisczqkwufpkcsxwfdbsvmktsnpbnlplyu9q"
-                  target="_blank"
-                  className="hover:text-primary"
-                >
-                  DEX Screener
-                </a>
-              </li>
-              <li className="mb-6">
-                <a
-                  href="https://www.dextools.io/app/en/solana/pair-explorer/4fp4SynBKisCZQkwUFpkcsXwFDBSVMkTSnPBnLpLyU9Q?t=1724083202142"
-                  target="_blank"
-                  className="hover:text-primary"
-                >
-                  DEX Tools
-                </a>
-              </li>
-              <li className="mb-6">
-                <a
-                  href="https://www.geckoterminal.com/solana/pools/4fp4SynBKisCZQkwUFpkcsXwFDBSVMkTSnPBnLpLyU9Q"
-                  target="_blank"
-                  className="hover:text-primary"
-                >
-                  Gecko Terminal
-                </a>
-              </li>
-              <li className="mb-6">
-                <a href="https://www.coingecko.com/en/coins/r-snoofi" target="_blank" className="hover:text-primary">
-                  Coin Gecko
-                </a>
-              </li>
-              <li className="mb-6">
-                <a href="https://coinmarketcap.com/currencies/r-snoofi/" target="_blank" className="hover:text-primary">
-                  Coin Market Cap
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://birdeye.so/token/7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t?chain=solana"
-                  target="_blank"
-                  className="hover:text-primary"
-                >
-                  Bird Eye
-                </a>
-              </li>
+              {charts.map((component) => (
+                <li key={component.title} className="mb-6">
+                  <a href={component.href} target="_blank" className="hover:text-primary">
+                    {component.title}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="text-left lg:mx-auto">
             <h4 className="mb-7 text-xl font-bold text-primary">Exchanges</h4>
             <ul className="transition-all duration-500">
-              <li className="mb-6">
-                <a
-                  href="https://raydium.io/swap/?inputMint=sol&outputMint=7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t"
-                  target="_blank"
-                  className="hover:text-primary"
-                >
-                  Raydium (DEX)
-                </a>
-              </li>
-              <li className="mb-6">
-                <a
-                  href="https://jup.ag/swap/SOL-7M9KJcPNC65ShLDmJmTNhVFcuY95Y1VMeYngKgt67D1t"
-                  target="_blank"
-                  className="hover:text-primary"
-                >
-                  Jupiter (DEX)
-                </a>
-              </li>
-              <li className="mb-6">
-                <a href="https://www.mexc.com/exchange/SNOOFI_USDT" target="_blank" className="hover:text-primary">
-                  MEXC (CEX)
-                </a>
-              </li>
-              <li>
-                <a href="https://www.lbank.com/trade/snoofi_usdt" target="_blank" className="hover:text-primary">
-                  LBANK (CEX)
-                </a>
-              </li>
+              {exchanges.map((component) => (
+                <li key={component.title} className="mb-6">
+                  <a href={component.href} target="_blank" className="hover:text-primary">
+                    {component.title}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
