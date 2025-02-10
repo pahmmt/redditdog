@@ -250,7 +250,7 @@ export default function Home() {
                         </svg>
                       </Link>
                     </Button>
-                    <Button className="flex items-center gap-2 rounded-full text-xl font-semibold">
+                    <Button className="flex items-center gap-2 rounded-full text-xl font-semibold" onClick={() => alert('Coming soon.')}>
                       Create your own profile picture <ArrowRightIcon />
                     </Button>
                   </div>
