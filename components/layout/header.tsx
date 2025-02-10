@@ -21,7 +21,7 @@ export default function Header() {
       text: 'Chart',
       newTab: true,
     },
-    { href: '#', text: 'PFP Generator', newTab: false },
+    //{ href: '#', text: 'PFP Generator', newTab: false },
     { href: 'https://r-snoofi.myshopify.com/collections/all', text: 'Shop', newTab: true },
   ]
 
