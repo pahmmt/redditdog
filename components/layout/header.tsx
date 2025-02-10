@@ -66,37 +66,37 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="left">
               <nav className="grid gap-2 font-medium">
-                <Link href="#" className="mb-4 flex items-center gap-2 font-semibold">
+                <Link href="#" className="mb-4 flex items-center gap-2">
                   <Image src="/logo.png" width={159} height={40} className="mr-2" alt="reddit dog | r/snoofi" />
                 </Link>
                 <Link
                   href="#howToBuy"
-                  className="rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary"
+                  className="rounded-md px-4 py-2 text-md text-foreground hover:bg-secondary hover:text-primary"
                 >
                   How to Buy
                 </Link>
                 <Link
                   href="#howToBuy"
-                  className="rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary"
+                  className="rounded-md px-4 py-2 text-md text-foreground hover:bg-secondary hover:text-primary"
                 >
                   Tokenomics
                 </Link>
                 <Link
                   href="https://www.reddit.com/r/snoofi/"
-                  className="rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary"
+                  className="rounded-md px-4 py-2 text-md text-foreground hover:bg-secondary hover:text-primary"
                   target="_blank"
                 >
                   Community
                 </Link>
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <div className="flex items-center gap-2 rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary">
+                    <div className="flex items-center gap-2 rounded-md px-4 py-2 text-md text-foreground hover:bg-secondary hover:text-primary">
                       Charts <ChevronDownIcon />
                     </div>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     {charts.map((component) => (
-                      <DropdownMenuItem key={component.title}>
+                      <DropdownMenuItem key={component.title} className="text-md">
                         <Link href={component.href} target="_blank">
                           {component.title}
                         </Link>
@@ -106,13 +106,13 @@ export default function Header() {
                 </DropdownMenu>
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <div className="flex items-center gap-2 rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary">
+                    <div className="flex items-center gap-2 rounded-md px-4 py-2 text-md text-foreground hover:bg-secondary hover:text-primary">
                       Exchanges <ChevronDownIcon />
                     </div>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     {exchanges.map((component) => (
-                      <DropdownMenuItem key={component.title}>
+                      <DropdownMenuItem key={component.title} className="text-md">
                         <Link href={component.href} target="_blank">
                           {component.title}
                         </Link>
