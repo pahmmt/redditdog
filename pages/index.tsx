@@ -213,7 +213,7 @@ export default function Home() {
                       </Link>
                     </Button>
                   </div>
-                  <div className="flex items-center justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-16">
+                  <div className="flex items-center justify-center gap-4 py-4 md:py-8 sm:gap-8 md:gap-12 lg:gap-16">
                     <Link href="https://coinmarketcap.com/currencies/r-snoofi/" target="_blank">
                       <Image src="/exchanges/cmc.png" width={75} height={79} alt="CoinMarketCap" />
                     </Link>
