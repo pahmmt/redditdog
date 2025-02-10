@@ -20,7 +20,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>reddit dog | r/snoofi</title>
+        <title>reddit dog (r/snoofi) | stumbled my way from the blockchain to reddit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Snoofi is a memecoin with no intrinsic value, no profit plans, and no central issuer—purely for entertainment. Not affiliated with Reddit, Inc. or its mascot, Snoo." />
       </Head>
       <div
         className={`${redditSans.variable} flex min-h-screen flex-col font-[family-name:var(--font-geist-mono)] text-lg font-medium`}
