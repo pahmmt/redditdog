@@ -163,7 +163,7 @@ export default function Home() {
                     <div className="text-xl font-semibold">Find r/snoofi on these</div>
                     <h3 className="text-6xl font-bold">Centralized Exchanges</h3>
                   </div>
-                  <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-16">
+                  <div className="mt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-16">
                     <Link href="https://www.mexc.com/exchange/SNOOFI_USDT" target="_blank">
                       <Image
                         src="/exchanges/mexc.png"
@@ -274,7 +274,7 @@ export default function Home() {
               <div className="grid grid-cols-1 gap-4 py-8 md:py-12">
                 <div className="flex flex-col items-center gap-6">
                   <h3 className="text-6xl font-bold">Roadmap</h3>
-                  <Image src="/candle.jpeg" width={474} height={474} alt="reddit dog | r/snoofi" />
+                  <Image src="/candle.png" width={474} height={474} alt="reddit dog | r/snoofi" />
                   <ol className="list-decimal text-xl">
                     <li>Community growth</li>
                     <li>Spread the memes</li>
