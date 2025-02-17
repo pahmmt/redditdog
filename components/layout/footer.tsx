@@ -76,7 +76,7 @@ export default function Footer() {
               <Link
                 href="https://www.reddit.com/r/snoofi/"
                 target="_blank"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-primary"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white"
               >
                 <svg className="size-5" viewBox="0 -1.5 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -89,7 +89,7 @@ export default function Footer() {
               <Link
                 href="https://x.com/snoofi_sol"
                 target="_blank"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-primary"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="size-5" viewBox="0 0 20 20" fill="none">
                   <g>
@@ -101,7 +101,7 @@ export default function Footer() {
                   </g>
                 </svg>
               </Link>
-              <Link href="https://www.instagram.com/snoofi_dog" target="_blank" className="flex h-9 w-9 items-center justify-center rounded-full bg-primary">
+              <Link href="https://www.instagram.com/snoofi_dog" target="_blank" className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white">
                 <InstagramLogoIcon  className="size-5" />
               </Link>
             </div>
