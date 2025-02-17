@@ -56,7 +56,7 @@ export default function Home() {
                   <div className="flex items-center gap-2">
                     <Button variant="outline" className="rounded-full text-lg font-semibold" asChild>
                       <Link href="https://www.reddit.com/r/snoofi/" className="flex items-center gap-2" target="_blank">
-                        <ArrowRightIcon /> Visit r/snoofi
+                        <ArrowRightIcon className="size-5" /> Visit r/snoofi
                       </Link>
                     </Button>
                     <Button variant="outline" className="rounded-full text-lg font-semibold" asChild>
@@ -146,7 +146,7 @@ export default function Home() {
                         <p>
                           <Button variant="outline" className="rounded-full text-lg font-semibold" asChild>
                             <Link href="https://moonshot.money" target="_blank" className="flex items-center gap-2">
-                              <PinBottomIcon /> Download Moonshot app
+                              <PinBottomIcon className="size-5" /> Download Moonshot app
                             </Link>
                           </Button>
                         </p>
@@ -337,7 +337,7 @@ export default function Home() {
                     <span className="text-5xl text-primary">Only on Reddit.</span>
                     <Button className="rounded-full text-xl font-bold" asChild>
                       <Link href="https://www.reddit.com/r/snoofi/" target="_blank" className="flex items-center gap-2">
-                        <ArrowRightIcon /> Visit r/snoofi
+                        <ArrowRightIcon className="size-5" /> Visit r/snoofi
                       </Link>
                     </Button>
                   </div>
