@@ -26,12 +26,12 @@ export default function Footer() {
             <h4 className="mb-7 text-xl font-bold text-primary">Community</h4>
             <ul className="transition-all duration-500">
               <li className="mb-6">
-                <a href="https://www.reddit.com/r/snoofi/" target="_blank" className="hover:text-primary">
+                <Link href="https://www.reddit.com/r/snoofi/" target="_blank" className="hover:text-primary">
                   Reddit
-                </a>
+                </Link>
               </li>
               <li className="mb-6">
-                <a
+                <Link
                   href="https://www.reddit.com/r/snoofi/s/TfNxm9E9Dd"
                   target="_blank"
                   className="flex items-center gap-3 hover:text-primary"
@@ -40,7 +40,7 @@ export default function Footer() {
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="size-2 fill-green-500">
                     <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z" />
                   </svg>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -49,9 +49,9 @@ export default function Footer() {
             <ul className="transition-all duration-500">
               {charts.map((component) => (
                 <li key={component.title} className="mb-6">
-                  <a href={component.href} target="_blank" className="hover:text-primary">
+                  <Link href={component.href} target="_blank" className="hover:text-primary">
                     {component.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -61,9 +61,9 @@ export default function Footer() {
             <ul className="transition-all duration-500">
               {exchanges.map((component) => (
                 <li key={component.title} className="mb-6">
-                  <a href={component.href} target="_blank" className="hover:text-primary">
+                  <Link href={component.href} target="_blank" className="hover:text-primary">
                     {component.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -73,7 +73,7 @@ export default function Footer() {
           <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between">
             <span className="text-gray-500">© 2024 reddit dog (r/snoofi). All rights reserved.</span>
             <div className="mt-4 flex space-x-4 sm:justify-center lg:mt-0">
-              <a
+              <Link
                 href="https://www.reddit.com/r/snoofi/"
                 target="_blank"
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-primary"
@@ -85,8 +85,8 @@ export default function Footer() {
                     fillRule="evenodd"
                   />
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://x.com/snoofi_sol"
                 target="_blank"
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-primary"
@@ -100,10 +100,10 @@ export default function Footer() {
                     />
                   </g>
                 </svg>
-              </a>
-              <a href="https://www.instagram.com/snoofi_dog" target="_blank" className="flex h-9 w-9 items-center justify-center rounded-full bg-primary">
+              </Link>
+              <Link href="https://www.instagram.com/snoofi_dog" target="_blank" className="flex h-9 w-9 items-center justify-center rounded-full bg-primary">
                 <InstagramLogoIcon  className="size-5" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
