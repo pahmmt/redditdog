@@ -1,4 +1,4 @@
-import { Analytics } from '@vercel/analytics/next'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Head, Html, Main, NextScript } from 'next/document'
 
 export default function Document() {
@@ -8,7 +8,7 @@ export default function Document() {
       <body className="antialiased">
         <Main />
         <NextScript />
-        <Analytics />
+        <GoogleAnalytics gaId="G-JV7SFHEDEZ" />
       </body>
     </Html>
   )
