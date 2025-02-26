@@ -173,13 +173,21 @@ export default function Home() {
                         className="h-auto max-w-48 md:max-w-64"
                       />
                     </Link>
-
                     <Link href="https://www.lbank.com/trade/snoofi_usdt" target="_blank">
                       <Image
                         src="/exchanges/lbank.png"
                         width={256}
                         height={41}
                         alt="Lbank"
+                        className="h-auto max-w-48 md:max-w-64"
+                      />
+                    </Link>
+                    <Link href="https://ascendex.com/en/cashtrade-spottrading/usdt/rsnoofi" target="_blank">
+                      <Image
+                        src="/exchanges/ascendex.png"
+                        width={256}
+                        height={41}
+                        alt="AscendEX"
                         className="h-auto max-w-48 md:max-w-64"
                       />
                     </Link>
