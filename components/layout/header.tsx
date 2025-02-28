@@ -74,13 +74,28 @@ export default function Header() {
                 >
                   Tokenomics
                 </Link>
-                <Link
-                  href="https://www.reddit.com/r/snoofi/"
-                  className="text-md rounded-md px-4 py-2 text-foreground hover:bg-secondary hover:text-primary"
-                  target="_blank"
-                >
-                  Community
-                </Link>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <div className="text-md flex items-center gap-2 rounded-md px-4 py-2 text-foreground hover:bg-secondary hover:text-primary">
+                      Community <ChevronDownIcon />
+                    </div>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    <DropdownMenuItem className="text-md">
+                      <Link href="https://www.reddit.com/r/snoofi/" target="_blank">
+                        Reddit
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem className="text-md">
+                      <Link href="https://www.reddit.com/r/snoofi/" target="_blank" className="flex items-center gap-3">
+                        Live Chat
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="size-2 fill-green-500">
+                          <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z" />
+                        </svg>
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <div className="text-md flex items-center gap-2 rounded-md px-4 py-2 text-foreground hover:bg-secondary hover:text-primary">
@@ -144,9 +159,26 @@ export default function Header() {
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="https://www.reddit.com/r/snoofi/" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>Community</NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuTrigger>Community</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                      <ListItem href="https://www.reddit.com/r/snoofi/" target="_blank">
+                        Reddit
+                      </ListItem>
+                      <ListItem href="https://www.reddit.com/r/snoofi/s/TfNxm9E9Dd" target="_blank">
+                        <span className="flex items-center gap-3">
+                          Live Chat
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 200 200"
+                            className="size-2 fill-green-500"
+                          >
+                            <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z" />
+                          </svg>
+                        </span>
+                      </ListItem>
+                    </ul>
+                  </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Charts</NavigationMenuTrigger>
