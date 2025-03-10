@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
         <div className="py-7">
           <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between">
-            <span className="text-gray-500">© 2024 reddit dog (r/snoofi). All rights reserved.</span>
+            <span className="text-gray-500">© {new Date().getFullYear()} reddit dog (r/snoofi). All rights reserved.</span>
             <div className="mt-4 flex space-x-4 sm:justify-center lg:mt-0">
               <Link
                 href="https://www.reddit.com/r/snoofi/"
