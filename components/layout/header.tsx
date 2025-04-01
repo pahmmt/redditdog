@@ -128,13 +128,6 @@ export default function Header() {
                     ))}
                   </DropdownMenuContent>
                 </DropdownMenu>
-                <Link
-                  href="https://r-snoofi.myshopify.com/collections/all"
-                  className="rounded-md px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary"
-                  target="_blank"
-                >
-                  Shop
-                </Link>
               </nav>
             </SheetContent>
           </Sheet>
@@ -203,17 +196,6 @@ export default function Header() {
                       ))}
                     </ul>
                   </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="https://r-snoofi.myshopify.com/collections/all"
-                      target="_blank"
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Shop
-                    </Link>
-                  </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
