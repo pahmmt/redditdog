@@ -75,7 +75,7 @@ export default function Home() {
                     </Button>
                     <Button variant="outline" className="rounded-full text-lg font-semibold" asChild>
                       <Link
-                        href="https://www.instagram.com/snoofi_dog"
+                        href="https://www.instagram.com/r.snoofi/"
                         target="_blank"
                         className="flex items-center justify-center"
                       >

@@ -101,7 +101,7 @@ export default function Footer() {
                   </g>
                 </svg>
               </Link>
-              <Link href="https://www.instagram.com/snoofi_dog" target="_blank" className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white">
+              <Link href="https://www.instagram.com/r.snoofi/" target="_blank" className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white">
                 <InstagramLogoIcon  className="size-5" />
               </Link>
             </div>
